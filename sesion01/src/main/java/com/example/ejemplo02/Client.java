@@ -12,6 +12,7 @@ public class Client {
     private static final String HOST = "localhost";
 
     public Client() {
+
         try {
             Socket socket = new Socket(HOST, PORT);
             System.out.println("1 > Connected to server at " + HOST + ":" + PORT);
@@ -43,4 +44,5 @@ public class Client {
     public static void main(String[] args) {
         new Client();
     }
+    
 }
